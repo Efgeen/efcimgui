@@ -1,11 +1,11 @@
 #include "efcimgui_impl_win32.h"
 
-extern bool ImGui_ImplWin32_Init(void *hwnd);
+extern int ImGui_ImplWin32_Init(void *hwnd);
 int efcimgui_impl_win32_init(HWND hwnd) {
     return !ImGui_ImplWin32_Init(hwnd);
 }
 
-extern bool ImGui_ImplWin32_InitForOpenGL(void *hwnd);
+extern int ImGui_ImplWin32_InitForOpenGL(void *hwnd);
 int efcimgui_impl_win32_init_for_open_gl(HWND hwnd) {
     return !ImGui_ImplWin32_InitForOpenGL(hwnd);
 }

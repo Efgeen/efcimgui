@@ -1,6 +1,6 @@
 #include "efcimgui_impl_dx9.h"
 
-extern bool ImGui_ImplDX9_Init(IDirect3DDevice9 *device);
+extern int ImGui_ImplDX9_Init(IDirect3DDevice9 *device);
 int efcimgui_impl_dx9_init(IDirect3DDevice9 *device) {
     return !ImGui_ImplDX9_Init(device);
 }
@@ -20,7 +20,7 @@ void efcimgui_impl_dx9_render_draw_data(ImDrawData *draw_data) {
     ImGui_ImplDX9_RenderDrawData(draw_data);
 }
 
-extern bool ImGui_ImplDX9_CreateDeviceObjects(void);
+extern int ImGui_ImplDX9_CreateDeviceObjects(void);
 int efcimgui_impl_dx9_create_device_objects(void) {
     return !ImGui_ImplDX9_CreateDeviceObjects();
 }

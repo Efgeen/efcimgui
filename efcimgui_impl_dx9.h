@@ -1,7 +1,6 @@
 #ifndef _EFCIMGUI_IMPL_DX9_H
 #define _EFCIMGUI_IMPL_DX9_H
 
-#include <stdbool.h>
 #include <d3d9.h>
 #define CIMGUI_DEFINE_ENUMS_AND_STRUCTS
 #include <cimgui.h>

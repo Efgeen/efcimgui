@@ -1,7 +1,6 @@
 #ifndef _EFCIMGUI_IMPL_WIN32_H
 #define _EFCIMGUI_IMPL_WIN32_H
 
-#include <stdbool.h>
 #define WIN32_LEAN_AND_MEAN
 #include <Windows.h>
 
